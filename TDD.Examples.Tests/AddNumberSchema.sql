@@ -1,1 +1,0 @@
-﻿CREATE SCHEMA [AddNumberTests] AUTHORIZATION dbo

@@ -5,12 +5,12 @@ using tSQLt.Client.Net;
 namespace TDD.Examples.TestRunner
 {
     [TestFixture]
-    public class AddNumberTests
+    public class DummyTests
     {
         private readonly tSQLtTestRunner _runner;
         private readonly string _connString;
 
-        public AddNumberTests()
+        public DummyTests()
         {
             _connString = ConfigurationManager.ConnectionStrings["tSQLt"].ConnectionString;
             _runner = new tSQLtTestRunner(_connString);
@@ -19,7 +19,7 @@ namespace TDD.Examples.TestRunner
         [Test]
         public void AddNumberReturnsSumOfParameters()
         {
-            var result = _runner.Run("AddNumberTests", "test_AddNumberReturnsSumOfParameters");
+            var result = _runner.Run("DummyTests", "testDummyFunction");
             Assert.IsTrue(result.Passed(), result.FailureMessages());
         }
     }

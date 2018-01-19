@@ -1,0 +1,1 @@
+﻿CREATE SCHEMA [DummyTests] AUTHORIZATION dbo

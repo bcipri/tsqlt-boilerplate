@@ -57,7 +57,7 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="AddNumberTests" />
+    <Folder Include="DummyTests" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="tSQLtCLR">
@@ -74,7 +74,7 @@
     </ArtifactReference>
   </ItemGroup>
   <ItemGroup>
-    <Build Include="AddNumberTests\testAddNumber.sql" />
-    <Build Include="AddNumberSchema.sql" />
+    <Build Include="DummyTests\testDummyFunction.sql" />
+    <Build Include="DummyTestsSchema.sql" />
   </ItemGroup>
 </Project>
